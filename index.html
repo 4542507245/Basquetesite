@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda de Produtos de Basquete</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Venda de Produtos de Basquete</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="home">
+    <div class="container">
+        <h2>Bem-vindo à nossa loja de basquete!</h2>
+        <p>Aqui você encontra tudo o que precisa para o seu jogo de basquete.</p>
+    </div>
+</section>
+
+<section id="produtos">
+    <div class="container">
+        <h2>Nossos Produtos</h2>
+        <div class="produtos-grid">
+            <!-- Aqui serão listados os produtos dinamicamente -->
+            <div class="produto">
+                <img src="https://bullwear.com.br/cdn/shop/products/Sc152d5d9767645629bae6e85fded5b36t.jpg?v=1690529898" alt="Nome do Produto">
+                <h3>Nome do Produto</h3>
+                <p class="preco">R$ 99,99</p>
+                <a href="#">Comprar</a>
+            </div>
+            <!-- Exemplo de mais produtos -->
+            <div class="produto">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiUnesGY2HkPW2rXgvzAmNNEnmqisDRKnBHw&s" alt="Nome do Produto">
+                <h3>Nome do Produto</h3>
+                <p class="preco">R$ 99,99</p>
+                <a href="#">Comprar</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contato">
+    <div class="container">
+        <h2>Entre em Contato</h2>
+        <form class="formulario-contato" action="enviar.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+        
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Venda de Produtos de Basquete. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+</body>
+</html>
